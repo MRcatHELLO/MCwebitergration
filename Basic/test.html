@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		DOM Button Object
+	</title>
+</head>
+
+<body style="text-align: center;">
+	<h1 style="color:green;">
+		GeeksforGeeks
+	</h1>
+	<h2>
+		DOM Button Property
+	</h2>
+	<p>Click the button to create a button.</p>
+	<button onclick="Geeks()">
+		Press me!
+	</button>
+	<br><br>
+	<div id="GFG"></div>
+
+	<!-- script to create new button -->
+	<script>
+		function Geeks() {
+			let myDiv = document.getElementById("GFG");
+			// creating button element
+			let button = document.createElement('BUTTON');
+			// creating text to be
+			//displayed on button
+			let text = document.createTextNode("Button");
+
+			// appending text to button
+			button.appendChild(text);
+			// appending button to div
+			myDiv.appendChild(button);;
+		}
+	</script>
+</body>
+
+</html>
